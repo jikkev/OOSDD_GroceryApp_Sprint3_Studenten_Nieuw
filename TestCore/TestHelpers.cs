@@ -35,7 +35,7 @@ namespace TestCore
                 PasswordHelper.VerifyPassword(
                     "wrongPassword",
                     "IunRhDjklo824@!Qfj7Pgj!zcse"
-                ).ToString());//Zelf uitwerken
+                ).ToString()); //Zelf uitwerken
         }
 
         [TestCase("user1", "IunRhDKa+fWo8+4/Qfj7Pg==.kDxZnUQHCZun6gLIE6d9oeULLRIuRmxmH2QKJv2IM08")]
