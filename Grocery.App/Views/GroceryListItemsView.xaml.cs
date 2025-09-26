@@ -1,3 +1,4 @@
+using System;
 using Grocery.App.ViewModels;
 using Microsoft.Maui.Controls;
 
@@ -9,5 +10,10 @@ public partial class GroceryListItemsView : ContentPage
     {
         InitializeComponent();
         BindingContext = viewModel;
+    }
+
+    private async void OnRegistrerenClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(RegistrationPage));
     }
 }
